@@ -13,7 +13,7 @@ external_stylesheets =[
         "crossorigin": "anonymous"
     }
 ]
-patients=pd.read_csv('individualDetails.csv')
+patients=pd.read_csv('IndividualDetails.csv')
 total=patients.shape[0]
 active=patients[patients["current_status"]=='Hospitalized'].shape[0]
 Recovered=patients[patients['current_status']=='Recovered'].shape[0]
